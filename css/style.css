@@ -2,17 +2,28 @@
 
 @import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
 
+/* ************CSS VARIABLES************ */
+:root {
+  --clr-timberwolf: #DAD7CD;   /* light grey-beige */
+  --clr-sage: #A3B18A;        /* sage green */
+  --clr-hunter: #3A5A40;      /* hunter green */
+  --clr-brunswick: #344E41;   /* brunswick green */
+  --clr-redwood: #B23A48;     /* redwood red */
+}
+
 /* ************COMMON************ */
 
 .logo {
   font-weight: 700;
   font-size: 2.25rem;
+  color: var(--clr-redwood);
 }
 
 body {
   font-family: "Inter", sans-serif;
   font-size: 1.1rem;
-  color: #303a4d;
+  background: var(--clr-timberwolf);
+  color: var(--clr-hunter);
 }
 
 [class*="__container"] {
@@ -28,12 +39,146 @@ body {
   border-radius: 30px;
   transition: all 0.3s;
   color: #fff;
-  background-color: #303a4d;
+  background-color: var(--clr-brunswick);
 }
 
 .title {
   font-size: 3.5rem;
   font-weight: 600;
+  color: var(--clr-redwood);
+}
+
+/* ************HEADINGS AND LINKS************ */
+h1, h2, h3 {
+  color: var(--clr-redwood);
+}
+
+h4, h5, h6 {
+  color: var(--clr-hunter);
+}
+
+a {
+  color: var(--clr-hunter);
+}
+
+.menu__link {
+  color: var(--clr-brunswick);
+}
+
+/* ************HERO IMAGE STYLING************ */
+.about__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.about__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* ************ALTERNATING SECTION BACKGROUNDS************ */
+.section:nth-of-type(odd) {
+  background: var(--clr-sage);
+}
+
+.section:nth-of-type(even) {
+  background: var(--clr-timberwolf);
+}
+
+/* ************SPECIFIC SECTION STYLING************ */
+
+/* About Me section - Timberwolf background, red headings, green text */
+.about.section {
+  background: var(--clr-timberwolf) !important;
+  color: var(--clr-hunter);
+}
+
+.about.section h1,
+.about.section h2,
+.about.section h3,
+.about.section .title {
+  color: var(--clr-redwood) !important;
+}
+
+/* Work Experience section - Sage background, red headings, green highlights */
+.services.section {
+  background: var(--clr-sage) !important;
+  color: var(--clr-hunter);
+}
+
+.services.section h1,
+.services.section h2,
+.services.section h3,
+.services.section .title {
+  color: var(--clr-redwood) !important;
+}
+
+.services.section .item-services__title {
+  color: var(--clr-hunter) !important;
+}
+
+.services.section h3.item-services__title {
+  color: var(--clr-hunter) !important;
+}
+
+.item-services__text {
+  color: var(--clr-hunter) !important;
+}
+
+.services.section p {
+  color: var(--clr-hunter) !important;
+}
+
+/* Researches section - Timberwolf background, red headings, green text */
+.testimonial.section {
+  background: var(--clr-timberwolf) !important;
+  color: var(--clr-hunter);
+}
+
+.testimonial.section h1,
+.testimonial.section h2,
+.testimonial.section h3 {
+  color: var(--clr-redwood) !important;
+}
+
+.testimonial.section .testiomonial__caption {
+  color: var(--clr-redwood) !important;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.testimonial.section .testimonial__title.title {
+  color: var(--clr-hunter) !important;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.testimonial.section p {
+  color: var(--clr-hunter) !important;
+}
+
+.testimonial.section .item-testimonial__caption {
+  color: var(--clr-brunswick) !important;
+}
+
+/* Contacts section - Sage background, red headings, green text */
+.outro.section {
+  background: var(--clr-sage) !important;
+  color: var(--clr-hunter);
+}
+
+.outro.section h1,
+.outro.section h2,
+.outro.section h3,
+.outro.section .title {
+  color: var(--clr-redwood) !important;
 }
 
 .wrapper {
@@ -55,7 +200,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: #fff;
+  background: var(--clr-timberwolf);
   z-index: 1000;
 }
 
@@ -391,6 +536,29 @@ body {
   font-weight: 600;
   letter-spacing: 0.02em;
   justify-self: end;
+}
+
+/* ****************CUSTOM RESUME STYLES**************** */
+
+.contact-info {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-info p {
+  color: #303a4d;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Adjust section spacing for better flow */
+section {
+  scroll-margin-top: 5.75rem; /* Account for fixed header */
 }
 
 /* ****************ABOUT PAGE**************** */

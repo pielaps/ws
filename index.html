@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="img/favicon.png" />
-  <title>HOME</title>
+  <title>Personal Resume</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -13,18 +13,17 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container">
-        <a href="index.html" class="header__logo logo">LOGO</a>
+        <a href="#" class="header__logo logo">Priakhina Mariia</a>
         <div class="header__navigation">
           <div class="header__menu menu">
             <nav class="menu__body">
               <nav class="menu__body">
                 <ul class="menu__list">
-                  <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
-                  <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
-                  <li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
-                  <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+                  <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+                  <li class="menu__item"><a href="#work" class="menu__link">Work Experience</a></li>
+                  <li class="menu__item"><a href="#researches" class="menu__link">Researches</a></li>
+                  <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
                 </ul>
-                <a href="#" class="actions-header__button">CTA Button</a>
               </nav>
           </div>
           <div class="header__actions actions-header">
@@ -34,118 +33,110 @@
       </div>
     </header>
     <main class="page">
-      <section class="page__main main">
-        <div class="main__container">
-          <h3 class="main__caption">Add a Subheading</h3>
-          <h1 class="main__title">H1 Heading</h1>
-          <div class="main__text">
-            Create a compelling and attention-grabbing short description that sparks curiosity and leaves readers
-            intrigued.
-          </div>
-          <a href="#" class="main__button">CTA Button</a>
-        </div>
-      </section>
-      <section class="page__about about">
+      <section class="page__about about section" id="about">
         <div class="about__container">
-          <div class="about__image"><img src="img/home/placeholder_about.jpg" alt="img" /></div>
+          <div class="about__image"><img src="img/home/placeholder_about.jpg" alt="Profile" /></div>
           <div class="about__content">
-            <h2 class="about__title title">About Heading</h2>
+            <h2 class="about__title title">About Me</h2>
             <div class="about__text">
               <p>
-                About Text: In this section, you can provide a detailed paragraph that delves into the history,
-                values, and mission of your web development business. Highlight expertise, unique approach of your
-                team, and the commitment that sets you apart.
+                Introduce yourself with a compelling personal story. Share your background, what drives you professionally, 
+                and the unique perspective you bring to your work. Highlight your key skills and what sets you apart.
               </p>
               <p>
-                Emphasize your passion for creating exceptional web solutions and convey your dedication to delivering
-                remarkable results for clients.
+                Describe your professional philosophy, core values, and the impact you aim to make in your field. 
+                This section should give readers a clear sense of who you are beyond your credentials.
               </p>
             </div>
-            <a href="#" class="about__button button">CTA Button</a>
+            <a href="#work" class="about__button button">View Experience</a>
           </div>
         </div>
       </section>
-      <section class="page__services services">
+      <section class="page__services services section" id="work">
         <div class="services__container">
-          <h2 class="services__title title">Services Heading</h2>
+          <h2 class="services__title title">Work Experience</h2>
           <div class="services__row">
             <div class="services__column">
               <div class="services__item item-services">
-                <a class="item-services__top" href="#">
+                <div class="item-services__top">
                   <div class="item-services__image">
-                    <img src="img/home/services_placeholder.jpg" alt="img" />
+                    <img src="img/home/services_placeholder.jpg" alt="Current Position" />
                   </div>
-                  <h3 class="item-services__title">First Service</h3>
-                </a>
-                <div class="item-services__text">
-                  Craft a brief description outlining the essence of your first service.
+                  <h3 class="item-services__title">Current Position</h3>
                 </div>
-                <a href="#" class="item-services__button button">CTA Button</a>
+                <div class="item-services__text">
+                  Company Name | 2020 - Present<br><br>
+                  Key responsibilities and achievements in your current role. Highlight specific projects and their impact.
+                </div>
               </div>
             </div>
             <div class="services__column">
               <div class="services__item item-services">
-                <a class="item-services__top" href="#">
+                <div class="item-services__top">
                   <div class="item-services__image">
-                    <img src="img/home/services_placeholder.jpg" alt="img" />
+                    <img src="img/home/services_placeholder.jpg" alt="Previous Position" />
                   </div>
-                  <h3 class="item-services__title">Second Service</h3>
-                </a>
-                <div class="item-services__text">
-                  Write a concise statement highlighting the core features of your second service.
+                  <h3 class="item-services__title">Previous Position</h3>
                 </div>
-                <a href="#" class="item-services__button button">CTA Button</a>
+                <div class="item-services__text">
+                  Previous Company | 2018 - 2020<br><br>
+                  Description of your previous role, key accomplishments, and skills developed during this position.
+                </div>
               </div>
             </div>
             <div class="services__column">
               <div class="services__item item-services">
-                <a class="item-services__top" href="#">
+                <div class="item-services__top">
                   <div class="item-services__image">
-                    <img src="img/home/services_placeholder.jpg" alt="img" />
+                    <img src="img/home/services_placeholder.jpg" alt="Earlier Position" />
                   </div>
-                  <h3 class="item-services__title">First Service</h3>
-                </a>
-                <div class="item-services__text">
-                  Provide a succinct overview key offerings of your third service.
+                  <h3 class="item-services__title">Earlier Position</h3>
                 </div>
-                <a href="#" class="item-services__button button">CTA Button</a>
+                <div class="item-services__text">
+                  Earlier Company | 2016 - 2018<br><br>
+                  Overview of your earlier professional experience and foundational skills gained.
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="page__testimonial testimonial">
+      <section class="page__testimonial testimonial section" id="researches">
         <div class="testimonial__container">
-          <h3 class="testiomonial__caption">Testimonial</h3>
+          <h3 class="testiomonial__caption">Researches & Projects</h3>
           <h2 class="testimonial__title title">
-            A comprehensive testimonial will be thoughtfully placed here, complete with all the compelling details and
-            thoughtful insights.
+            Showcase your research projects, publications, or significant professional projects that demonstrate your expertise and contributions to your field.
           </h2>
           <div class="testimonial__item item-testimonial">
             <div class="item-testimonial__image">
-              <img src="img/home/user.png" alt="user" />
+              <img src="img/home/user.png" alt="Research Icon" />
             </div>
-            <h4 class="item-testimonial__title">Full Name</h4>
-            <div class="item-testimonial__caption">Job Title</div>
+            <h4 class="item-testimonial__title">Featured Publication/Project</h4>
+            <div class="item-testimonial__caption">Year | Journal/Conference</div>
           </div>
         </div>
       </section>
-      <section class="page__outro outro outro_home">
+      <section class="page__outro outro outro_home section" id="contacts">
         <div class="outro__container">
-          <h2 class="outro__title title">Talk To Us Heading</h2>
+          <h2 class="outro__title title">Get In Touch</h2>
           <div class="outro__text">
-            Text: In this section, you can compose a friendly and informative paragraph that encourages visitors to
-            engage with your business.
+            I'm always interested in new opportunities and meaningful connections. 
+            Feel free to reach out if you'd like to discuss potential collaborations or simply connect.
           </div>
-          <a href="#" class="outro__button button">CTA Button</a>
+          <div class="contact-info" style="margin-bottom: 2rem;">
+            <p style="margin-bottom: 1rem;"><strong>Email:</strong> your.email@example.com</p>
+            <p style="margin-bottom: 1rem;"><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Location:</strong> Your City, State</p>
+          </div>
+          <a href="mailto:your.email@example.com" class="outro__button button">Contact Me</a>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__container">
         <a href="#" class="footer__policy">Privacy Policy – Terms & Conditions</a>
-        <a href="" class="footer__logo logo">LOGO</a>
-        <div class="footer__copyright">Copyright © 2025 LOGO – All Rights Reserved</div>
+        <a href="#" class="footer__logo logo">Priakhina Mariia</a>
+        <div class="footer__copyright">Copyright © 2025 Priakhina Mariia – All Rights Reserved</div>
       </div>
     </footer>
   </div>
