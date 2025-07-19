@@ -5,7 +5,7 @@
 /* ************CSS VARIABLES************ */
 :root {
   --clr-timberwolf: #DAD7CD;   /* light grey-beige */
-  --clr-sage: #A3B18A;        /* sage green */
+  --clr-sage: #dde5b6;        /* sage green */
   --clr-hunter: #3A5A40;      /* hunter green */
   --clr-brunswick: #344E41;   /* brunswick green */
   --clr-redwood: #B23A48;     /* redwood red */
@@ -196,12 +196,13 @@ a {
 /* ************HEADER************ */
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background: var(--clr-timberwolf);
   z-index: 1000;
+  transition: transform 0.3s ease;
 }
 
 .header__container {
